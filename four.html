@@ -1,0 +1,28 @@
+<!-- Problem 4 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 4: Greeting Form Without Parameter</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                let prefix = $(this).text();
+                let name = $("#nameInput").val();
+                alert(prefix + " " + name);
+            });
+        });
+    </script>
+</head>
+<body>
+    <form>
+        <label for="nameInput">Enter your name: </label>
+        <input type="text" id="nameInput" name="nameInput" placeholder="Enter your name">
+        <button type="button">Hello</button>
+        <button type="button">Good Bye</button>
+        <button type="button">Greetings</button>
+    </form>
+</body>
+</html>
